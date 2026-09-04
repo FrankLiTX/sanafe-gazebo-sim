@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!-- Brings Gazebo up through ROS, to check the environment works.
+     roslaunch sanafe_buggy smoke_test.launch [gui:=false] -->
+<launch>
+  <arg name="gui"     default="true"/>
+  <arg name="paused"  default="false"/>
+  <arg name="verbose" default="true"/>
+
+  <include file="$(find gazebo_ros)/launch/empty_world.launch">
+    <arg name="world_name" value="$(find sanafe_buggy)/worlds/smoke_test.world"/>
+    <arg name="gui"     value="$(arg gui)"/>
+    <arg name="paused"  value="$(arg paused)"/>
+    <arg name="verbose" value="$(arg verbose)"/>
+  </include>
+</launch>

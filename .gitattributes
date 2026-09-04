@@ -1,0 +1,6 @@
+# Force LF: these scripts run inside a Linux container and break with CRLF.
+* text=auto eol=lf
+
+*.pdf binary
+*.png binary
+*.jpg binary
