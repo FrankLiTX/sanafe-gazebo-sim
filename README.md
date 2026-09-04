@@ -13,7 +13,7 @@ anywhere.
 Docker is the only thing you need to install.
 
 ```bash
-git clone <this repo>
+git clone https://github.com/FrankLiTX/sanafe-gazebo-sim.git
 cd sanafe-gazebo-sim
 ./scripts/build.sh      # ~25 min, mostly ESIM
 ./scripts/run.sh        # shell inside the container
